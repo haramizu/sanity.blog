@@ -10,7 +10,7 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'Sanity WordPress',
+  title: 'Hararamizu.jp Studio',
 
   projectId: process.env.SANITY_STUDIO_PROJECT_ID || 'project_id',
   dataset: process.env.SANITY_STUDIO_DATASET || 'production',
