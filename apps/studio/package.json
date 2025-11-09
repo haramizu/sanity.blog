@@ -1,0 +1,47 @@
+{
+  "name": "sanity-blog",
+  "private": true,
+  "version": "0.1.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/icons": "^3.7.4",
+    "@sanity/vision": "^4.14.2",
+    "react": "^19.1",
+    "react-dom": "^19.1",
+    "sanity": "^4.14.2",
+    "styled-components": "^6.1.18",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@portabletext/block-tools": "^3.5.5",
+    "@sanity/eslint-config-studio": "^5.0.2",
+    "@types/jsdom": "^27.0.0",
+    "@types/react": "^19.1",
+    "@types/xml2js": "^0.4.14",
+    "@wordpress/block-serialization-default-parser": "^5.30.0",
+    "eslint": "^9.39.1",
+    "html-entities": "^2.6.0",
+    "jsdom": "^26.1.0",
+    "p-limit": "^7.1.1",
+    "prettier": "^3.5",
+    "typescript": "^5.9.3",
+    "wp-types": "^4.68.1"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
+  }
+}
