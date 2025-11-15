@@ -6,7 +6,10 @@ export const tagType = defineType({
   title: 'Tag',
   type: 'document',
   icon: TagIcon,
-  fields: [defineField({name: 'name', type: 'string'}), defineField({name: 'slug', type: 'slug'})],
+  fields: [
+    defineField({name: 'name', type: 'string'}), 
+    defineField({name: 'slug', type: 'slug'}),
+    defineField({name: 'id', type: 'string'})],
   preview: {
     select: {
       title: 'name',
