@@ -1,3 +1,5 @@
 # Sanity Studio
 .sanity
 dist
+.vercel
+.env*.local

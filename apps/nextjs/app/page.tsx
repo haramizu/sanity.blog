@@ -3,6 +3,7 @@ import { type SanityDocument } from "next-sanity";
 
 import { client } from "@/sanity/client";
 import Hero from "@/components/Hero";
+import { LinkBuilder } from "@/lib/linkBuilder";
 
 const POSTS_QUERY = `*[
   _type == "post"
@@ -25,7 +26,7 @@ export default async function IndexPage() {
       <ul className="flex flex-col gap-y-4">
         {posts.map((post) => (
           <li className="hover:underline" key={post._id}>
-            <Link href={`/${post.slug.current}`}>
+            <Link href={LinkBuilder(post.slug.current, post.date)}>
               <h2 className="text-xl font-semibold">{post.title}</h2>
               <p>{new Date(post.date).toLocaleDateString()}</p>
             </Link>
